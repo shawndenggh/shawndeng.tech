@@ -43,6 +43,12 @@ googleAnalytics = "G-XWL7VJFJRE"
     weight = 40
   
   [[menu.main]]
+    identifier = "links"
+    name = "友链"
+    url = "/links/"
+    weight = 45
+  
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
