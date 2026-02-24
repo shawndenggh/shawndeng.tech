@@ -1,0 +1,59 @@
+baseURL = "https://shawndeng.tech/"
+languageCode = "zh-cn"
+title = "ShawnDeng's Tech Blog"
+theme = "PaperMod"
+googleAnalytics = "G-XWL7VJFJRE"
+
+[params]
+  description = "分享技术文章和编程心得"
+  author = "Shawn Deng"
+  comments = true
+  
+  [params.homeInfoParams]
+    Title = "Hi! 👋"
+    Content = "欢迎来到我的技术博客，在这里分享编程、开发和技术思考。"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/shawndenggh"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "/repos.html"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "archive"
+    name = "归档"
+    url = "/archives/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 40
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
